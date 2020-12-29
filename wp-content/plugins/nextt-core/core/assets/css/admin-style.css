@@ -1,0 +1,18 @@
+.nextt_dynamic_code {
+    max-width: 1000px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    border-bottom: 1px solid #dedddd;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.nextt_dynamic_code + table {
+    display: flex;
+    padding: 50px 10px 10px 10px;
+    max-width: 1000px;
+    justify-content: center;
+    box-shadow: 0px 2px 4px 0px #756f6f75;
+}

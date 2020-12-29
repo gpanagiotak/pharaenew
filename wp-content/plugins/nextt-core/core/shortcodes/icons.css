@@ -1,0 +1,42 @@
+/*
+    CUSTOMIZE THE EDITOR BUTTONS
+
+    PATTERN IS .mce-i-<the-class-you-use>{}
+*/
+
+.mce-i-funky-box:before{
+    content: '▓';
+}
+.mce-i-col:before{
+    content: '▥';
+}
+.mce-i-drop-cap:before{
+    content: 'A';
+}
+
+.mce-i-accordion:before{
+    content: '▤';
+}
+.mce-i-title:before{
+    content: 'Ⓣ';
+}
+.mce-i-div:before{
+    content: '▣';
+}
+
+.mce-i-imagetext:before{
+    content: '❀';
+}
+.mce-i-nexttbutton:before{
+    content: 'Ⓑ';
+}
+.mce-i-hidemore:before{
+    content: '▽';
+}
+
+.mce-i-hr:before{
+    content: '−';
+}
+.mce-i-popup:before{
+    content: '\274F';
+}

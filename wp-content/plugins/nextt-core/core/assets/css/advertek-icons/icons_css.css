@@ -1,0 +1,387 @@
+.room_icon{
+    display: inline-block;
+    height: 27px;
+    width: 29px;
+    background: url('room_facilities_icons.png');
+    position: relative;
+    top: 7px;
+}
+
+.hotel_icon{
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    background:  url('hotel_icons.png');
+    position: relative;
+    top: 7px;
+}
+
+.room_ac{
+    background-position: 0 0 !important
+}
+.room_private_pool{
+    background-position: -36px 0 !important
+}
+.room_private_inner_pool{
+    background-position: -72px 0 !important
+}
+.room_closet{
+    background-position: 0 -30px !important
+}
+.room_big_bed{
+    background-position: -36px -30px !important;
+}
+.room_double_beds{
+    background-position: -36px -30px !important;
+}
+.room_single{
+    background-position: -36px -30px !important;
+}
+.room_fan{
+    background-position: -72px -30px !important;
+}
+.room_fireplace{
+    background-position: 0 -64px !important;
+}
+.room_heat{
+    background-position: -36px -64px !important;
+}
+.room_soundproofing{
+    background-position: -72px -64px !important;
+}
+.room_ironing_equipment{
+    background-position: 0 -94px !important;
+}
+.room_mosquito_net{
+    background-position: -36px -94px !important;
+}
+.room_personal_entry{
+    background-position: -72px -94px !important;
+}
+.room_safe{
+    background-position: 0 -129px !important;
+}
+.room_sofa{
+    background-position: -36px -129px !important;
+}
+.room_outdoor_furniture{
+    background-position: -72px -129px !important;
+}
+.room_mini_bar{
+    background-position: 0 -163px !important;
+}
+.room_washer_machine{
+    background-position: -36px -163px !important;
+ }
+.room_desk{
+    background-position: -72px -163px !important;
+}
+.room_kitchen_equipment{
+    background-position: 0 -194px !important;
+}
+.room_dining_room{
+    background-position: -36px -194px !important;
+}
+.room_oven{
+    background-position: -72px -194px !important;
+}
+.room_coffee_maker{
+    background-position: 0 -227px !important;
+}
+.room_toaster{
+    background-position: -36px -227px !important;
+}
+.room_barbecue{
+    background-position: -72px -227px !important;
+}
+.room_shower{
+    background-position: 0 -261px !important;
+}
+.room_kettle{
+    background-position: -36px -261px !important;
+}
+.room_fridge{
+    background-position: -72px -261px !important;
+}
+.room_toiletries{
+    background-position: 0 -294px !important;
+}
+.room_kitchen{
+    background-position: -36px -294px !important;
+}
+.room_laptop{
+    background-position: -72px -294px !important;
+}
+.room_slippers{
+    background-position: 0 -327px !important;
+}
+.room_microwave{
+    background-position: -36px -327px !important;
+}
+.room_dvd_player{
+    background-position: -72px -327px !important;
+}
+.room_tv_lcd{
+    background-position: 0 -359px !important;
+}
+.room_bathtub{
+    background-position: -36px -359px !important;
+}
+.room_telephone{
+    background-position: -72px -359px !important;
+}
+.room_fax{
+    background-position: 0 -393px !important;
+}
+.room_bathrobe{
+    background-position: -36px -393px !important;
+}
+.room_console_games{
+    background-position: -72px -393px !important;
+}
+.room_radio{
+    background-position: 0 -426px !important;
+}
+.room_hairdryer{
+    background-position: -36px -426px !important;
+}
+.room_waking{
+    background-position: -72px -426px !important;
+}
+.room_balcony{
+    background-position: 0 -459px !important;
+}
+.room_pc{
+    background-position: -36px -459px !important;
+}
+.room_pool_view{
+    background-position: -72px -459px !important;
+}
+.room_garden_view{
+    background-position: 0 -491px !important;
+}
+.room_sea_view{
+    background-position: -36px -491px !important;
+}
+.room_linen_change_every_x_days{
+    width: 26px !important;
+    background-position: -72px -491px !important;
+}
+.room_daily_cleaning{
+    width: 26px !important;
+    background-position: -72px -491px !important;
+}
+.room_cleaning_every_3_days{
+    width: 26px !important;
+    background-position: -72px -491px !important;
+}
+.room_mountain_view{
+    background-position: 0 -524px !important;
+}
+.room_city_view{
+    background-position: -36px -524px !important;
+}
+.room_satellite_TV{
+    background-position: -72px -524px !important;
+}
+.room_wifi{
+    background-position: 0 -557px !important;
+}
+.room_room_service{
+    background-position: -36px -557px !important;
+}
+.room_cd_player{
+    background-position: -72px -557px !important;
+}
+
+
+
+
+
+/* FIRST LINE */
+.inner_pool{
+    background-position: 0 0 !important
+}
+.outdoor_pool{
+     background-position: -34px 0 !important
+}
+.private_beach{
+    background-position: -68px 0 !important
+}
+.beach{
+    background-position: -102px 0 !important
+}
+.spa{
+    background-position: -136px 0 !important
+}
+.sauna{
+    background-position: -171px 0 !important
+}
+.whirlpool{
+    background-position: -204px 0 !important
+}
+.gym{
+    background-position: -239px 0 !important
+}
+.solarium{
+    background-position: -273px 0 !important
+}
+
+/* SECOND LINE */
+.tennis{
+    background-position: 0 -29px !important
+}
+.bowling{
+    background-position: -34px -29px !important
+}
+.pinpong{
+    background-position: -68px -29px !important
+}
+.golf{
+    background-position: -102px -29px !important
+}
+.basket{
+    background-position: -136px -29px !important
+}
+.football{
+    background-position: -171px -29px !important
+}
+.beach_volley{
+    background-position: -204px -29px !important
+}
+.rowing{
+    background-position: -239px -29px !important
+}
+.riding{
+    background-position: -272px -29px !important
+}
+.free_cycling{
+    background-position: -307px -29px !important
+}
+.bicycle_rental{
+    background-position: -307px -29px !important
+}
+.car_rental{
+    background-position: -341px -29px !important
+}
+.transportation_to_from_airport{
+    background-position: -375px -29px !important
+}
+
+/* THIRD LINE */
+.restaurant{
+    background-position: 0 -60px !important
+}
+.restaurant_a_la_carte{
+    background-position: 0 -60px !important
+}
+.restaurant_buffet{
+    background-position: 0 -60px !important
+}
+.bar{
+    background-position: -34px -60px !important
+}
+.snack_bar{
+    background-position: -34px -60px !important
+}
+.barbeque{
+    background-position: -68px -60px !important
+}
+.vending_machine{
+    background-position: -103px -60px !important
+}
+.room_service{
+    background-position: -137px -60px !important
+}
+.breakfast_in_the_room{
+    background-position: -171px -60px !important
+}
+
+/* FOURTH LINE */
+.balcony{
+    background-position: 0 -91px !important
+}
+.lounge{
+    background-position: -34px -91px !important
+}
+.pc_room{
+    background-position: -68px -91px !important
+}
+.fax{
+    background-position: -103px -91px !important
+}
+.printer{
+    background-position: -136px -91px !important
+}
+.wifi{
+    background-position: -171px -91px !important
+}
+
+/* FIFTH LINE */
+.full_time_front_desk{
+    background-position: 0 -123px !important
+}
+.debit_cards{
+    background-position: -34px -123px !important
+}
+.newspaper{
+    background-position: -68px -123px !important
+}
+.safe{
+    background-position: -103px -123px !important
+}
+.safe{
+    background-position: -103px -123px !important
+}
+.luggage_storage{
+    background-position: -136px -123px !important
+}
+.atm{
+    background-position: -171px -123px !important
+}
+.parking{
+    background-position: -204px -123px !important
+}
+.elevator{
+    background-position: -239px -123px !important
+}
+
+/* SIXTH LINE */
+.view_sea{
+    background-position: 0 -153px !important
+}
+.view_garden{
+    background-position: -34px -153px !important
+}
+.view_mountain{
+    background-position: -68px -153px !important
+}
+.view_city{
+    background-position: -103px -153px !important
+}
+
+/* SEVENTH LINE */
+.mini_market{
+    background-position: 0 -185px !important
+}
+.hair_salon{
+    background-position: -34px -185px !important
+}
+.ac{
+    background-position: -68px -185px !important
+}
+.playground{
+    background-position: -103px -184px !important
+}
+.iron_services{
+    background-position: -136px -185px !important
+}
+.laundry_services{
+    background-position: -171px -185px !important
+}
+.dry_clean{
+    background-position: -204px -185px !important
+}
+.pet_friendly{
+    background-position: -239px -185px !important
+}

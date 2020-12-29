@@ -1,0 +1,459 @@
+
+
+.advertek_icon{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url('icons.png') !important;
+    color: #561c1c !important;
+    position: relative;
+    top: 7px;
+}
+.iconbox-icon-balcony {
+    background-position: 0 0 !important
+}
+
+.iconbox-icon-patio {
+    background-position: 0 -50px !important
+}
+
+.iconbox-icon-seaview {
+    background-position: 0 -100px !important
+}
+
+.iconbox-icon-gardenview {
+    background-position: 0 -150px !important
+}
+
+.iconbox-icon-poolview {
+    background-position: 0 -200px !important
+}
+
+.iconbox-icon-mountainview {
+    background-position: 0 -250px !important
+}
+
+.iconbox-icon-cityview {
+    background-position: 0 -300px !important
+}
+
+/* General Room Facilities */
+.iconbox-icon-closet {
+    background-position: -50px 0 !important
+}
+
+.iconbox-icon-hangers {
+    background-position: -50px -50px !important
+}
+
+.iconbox-icon-fan {
+    background-position: -50px -100px !important
+}
+
+.iconbox-icon-ac {
+    background-position: -50px -150px !important
+}
+
+.iconbox-icon-fireplace {
+    background-position: -50px -200px !important
+}
+
+.iconbox-icon-iron {
+    background-position: -50px -250px !important
+}
+
+.iconbox-icon-ironingfacilities {
+    background-position: -50px -300px !important
+}
+
+.iconbox-icon-mosquitonet {
+    background-position: -50px -350px !important
+}
+
+.iconbox-icon-safe {
+    background-position: -50px -402px !important
+}
+
+.iconbox-icon-sofa {
+    background-position: -100px -1px !important
+}
+
+.iconbox-icon-soundproof {
+    background-position: -100px -50px !important
+}
+
+.iconbox-icon-washingmachine {
+    background-position: -100px -100px !important
+}
+
+.iconbox-icon-officedesk {
+    background-position: -100px -150px !important
+}
+
+.iconbox-icon-bed {
+    background-position: -100px -200px !important
+}
+
+/* Room Kitchen Facilities */
+.iconbox-icon-diningtable {
+    background-position: -150px 0 !important
+}
+
+.iconbox-icon-oven {
+    background-position: -150px -50px !important
+}
+
+.iconbox-icon-stove {
+    background-position: -150px -100px !important
+}
+
+.iconbox-icon-toaster {
+    background-position: -150px -150px !important
+}
+
+.iconbox-icon-dishwasher {
+    background-position: -150px -200px !important
+}
+
+.iconbox-icon-kettle {
+    background-position: -150px -250px !important
+}
+
+.iconbox-icon-minibar {
+    background-position: -150px -300px !important
+}
+
+.iconbox-icon-kitchenware {
+    background-position: -150px -350px !important
+}
+
+.iconbox-icon-microwave {
+    background-position: -150px -400px !important
+}
+
+.iconbox-icon-potspans {
+    background-position: -200px -1px !important
+}
+
+.iconbox-icon-fridge {
+    background-position: -200px -50px !important
+}
+
+.iconbox-icon-coffeemaker {
+    background-position: -200px -100px !important
+}
+
+/* Room Bathroom Facilities */
+.iconbox-icon-bath {
+    background-position: -250px 0 !important
+}
+
+.iconbox-icon-bidet {
+    background-position: -250px -50px !important
+}
+
+.iconbox-icon-shower {
+    background-position: -250px -100px !important
+}
+
+.iconbox-icon-bathrobe {
+    background-position: -250px -150px !important
+}
+
+.iconbox-icon-toiletries {
+    background-position: -250px -200px !important
+}
+
+.iconbox-icon-hairdryer {
+    background-position: -250px -250px !important
+}
+
+.iconbox-icon-toilet {
+    background-position: -250px -300px !important
+}
+
+.iconbox-icon-slippers {
+    background-position: -250px -350px !important
+}
+
+/* Room Technology Facilities */
+.iconbox-icon-wifi {
+    background-position: -300px 0 !important
+}
+
+.iconbox-icon-tv {
+    background-position: -300px -50px !important
+}
+
+.iconbox-icon-phone {
+    background-position: -300px -100px !important
+}
+
+.iconbox-icon-dvd {
+    background-position: -300px -150px !important
+}
+
+.iconbox-icon-cd {
+    background-position: -300px -200px !important
+}
+
+.iconbox-icon-radio {
+    background-position: -300px -250px !important
+}
+
+.iconbox-icon-tvsat {
+    background-position: -300px -300px !important
+}
+
+.iconbox-icon-videogames {
+    background-position: -300px -351px !important
+}
+
+.iconbox-icon-bluray {
+    background-position: -300px -400px !important
+}
+
+/* ************************************** HOTEL FACILITIES ************************************** */
+.iconbox-icon-indoorpool {
+    background-position: -350px 0 !important
+}
+
+.iconbox-icon-outdoorpool {
+    background-position: -350px -50px !important
+}
+
+.iconbox-icon-privatebeach {
+    background-position: -350px -100px !important
+}
+
+.iconbox-icon-beachfront {
+    background-position: -350px -150px !important
+}
+
+.iconbox-icon-spa {
+    background-position: -350px -200px !important
+}
+
+.iconbox-icon-sauna {
+    background-position: -350px -250px !important
+}
+
+.iconbox-icon-hammam {
+    background-position: -350px -300px !important
+}
+
+.iconbox-icon-gym {
+    background-position: -350px -350px !important
+}
+
+.iconbox-icon-jacuzzi {
+    background-position: -350px -400px !important
+}
+
+.iconbox-icon-solarium {
+    background-position: -400px 0 !important
+}
+
+.iconbox-icon-tennis {
+    background-position: -400px -50px !important
+}
+
+.iconbox-icon-billiards {
+    background-position: -400px -100px !important
+}
+
+.iconbox-icon-pingpong {
+    background-position: -400px -150px !important
+}
+
+.iconbox-icon-darts {
+    background-position: -400px -200px !important
+}
+
+.iconbox-icon-squash {
+    background-position: -400px -250px !important
+}
+
+.iconbox-icon-bowling {
+    background-position: -400px -300px !important
+}
+
+.iconbox-icon-minigolf {
+    background-position: -400px -350px !important
+}
+
+.iconbox-icon-golf {
+    background-position: -400px -400px !important
+}
+
+.iconbox-icon-windsurf {
+    background-position: -450px 0 !important
+}
+
+.iconbox-icon-diving {
+    background-position: -450px -50px !important
+}
+
+.iconbox-icon-restaurant {
+    background-position: -450px -100px !important
+}
+
+.iconbox-icon-bar {
+    background-position: -450px -150px !important
+}
+
+.iconbox-icon-bbq {
+    background-position: -450px -200px !important
+}
+
+.iconbox-icon-roomservice {
+    background-position: -450px -250px !important
+}
+
+.iconbox-icon-breakfast {
+    background-position: -450px -300px !important
+}
+
+.iconbox-icon-vendingmachine {
+    background-position: -450px -350px !important
+}
+
+.iconbox-icon-reception24 {
+    background-position: -450px -400px !important
+}
+
+.iconbox-icon-luggage {
+    background-position: -500px 0 !important
+}
+
+.iconbox-icon-amea {
+    background-position: -500px -50px !important
+}
+
+.iconbox-icon-creditcard {
+    background-position: -500px -100px !important
+}
+
+.iconbox-icon-alarm {
+    background-position: -500px -150px !important
+}
+
+.iconbox-icon-lounge {
+    background-position: -500px -200px !important
+}
+
+.iconbox-icon-fax {
+    background-position: -500px -250px !important
+}
+
+.iconbox-icon-playground {
+    background-position: -500px -300px !important
+}
+
+.iconbox-icon-parking {
+    background-position: -500px -350px !important
+}
+
+.iconbox-icon-shuttle {
+    background-position: -500px -400px !important
+}
+
+.iconbox-icon-drycleaning {
+    background-position: -550px 0 !important
+}
+
+.iconbox-icon-ironing {
+    background-position: -550px -50px !important
+}
+
+.iconbox-icon-laundry {
+    background-position: -550px -100px !important
+}
+
+.iconbox-icon-dailymaid {
+    background-position: -550px -150px !important
+}
+
+.iconbox-icon-earlycheckin {
+    background-position: -550px -200px !important
+}
+
+.iconbox-icon-privatecheckin {
+    background-position: -550px -250px !important
+}
+
+
+.iconbox-icon-basket {
+
+}
+.iconbox-icon-football {
+
+}
+.iconbox-icon-beachvolley {
+
+}
+
+.iconbox-icon-cano {
+
+}
+
+.iconbox-icon-pc {
+
+}
+
+.iconbox-icon-car {
+
+}
+
+.iconbox-icon-bike {
+
+}
+
+.iconbox-icon-car {
+
+}
+
+.iconbox-icon-casino{
+
+}
+
+.iconbox-icon-karaoke{
+
+}
+
+.iconbox-icon-newspaper {
+}
+
+.iconbox-icon-atm {
+}
+
+.iconbox-icon-parking{
+
+}
+
+.iconbox-icon-giftshop{
+
+}
+
+.iconbox-icon-hairsalon{
+
+}
+
+.iconbox-icon-minimarket{
+
+}
+.iconbox-icon-heat{
+
+}
+.iconbox-icon-minikitchenware{
+
+}
+.iconbox-icon-porch{
+
+}
+.iconbox-icon-laptop{
+
+}
+.iconbox-icon-door{
+
+}

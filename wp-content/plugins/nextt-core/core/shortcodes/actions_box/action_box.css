@@ -1,0 +1,52 @@
+.padding_col{
+    padding: 10px 0px 0px 15px;
+    overflow: hidden;
+}
+.sc_active_box_big{
+    height: 480px;
+
+}
+.sc_home_our_story{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sc_active_box{
+    position: relative;
+    overflow: hidden;
+}
+.sc_active_box_text{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border-radius: 10px;
+}
+.sc_active_box_image{
+    height: 100%;
+    width: 100%;
+}
+.sc_active_box_content{
+    width: 100%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    -vendor-animation-duration: 0.5s;
+    -vendor-animation-delay: 0.5s;
+    -vendor-animation-iteration-count: infinite;
+    display: none;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    padding: 0px 15px;
+    margin: 0px 0px -10px 0px;
+    height: 100%;
+}
+.sc_active_box_content h2{
+    font-weight: 100;
+}
+.sc_active_box_content p{
+    font-weight: 100;
+    line-height: 20px;
+}

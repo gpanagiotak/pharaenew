@@ -1,0 +1,19 @@
+/* Ready to write */
+.room-facilities{
+    display: inline-block;
+    width: 33%;
+}
+
+.nextt_active_done{
+    background: #69BE77 !important;
+    color: #fff !important;
+}
+
+.nextt_active_incomplete{
+    background: #607D8B !important;
+    color: #fff !important;
+}
+
+.nextt_theme_options_boxes{
+    background: rgba(255,255,255,0.1) !important;
+}
