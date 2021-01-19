@@ -48,7 +48,5 @@
         <div class="navigation-inner">
             <?php genius_theme_primary_menu(); ?>
         </div>
-
         <span id="toggle-menu">Menu</span>
-
     </div>

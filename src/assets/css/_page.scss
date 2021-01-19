@@ -1,0 +1,242 @@
+@import "base";
+
+.page-title {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #645349;
+  border-bottom: 1px solid #645349;
+  font-size: 4.75em;
+  position: relative;
+  font-weight: 100;
+  line-height: 1.65;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  white-space: nowrap;
+  margin: 0.5em 0;
+  font-style: italic;
+
+  :before {
+    box-shadow: -10px -10px 0px -2px #26d2e2;
+  }
+
+  :after {
+    box-shadow: 10px 10px 0px -2px #26d2e2;
+  }
+
+  :before, :after {
+    content: "";
+    font-size: 0.15em;
+    width: 1.1em;
+    height: 1.1em;
+    display: inline-block;
+    background-color: #645349;
+    -webkit-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
+    -moz-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
+    -ms-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
+    -o-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
+    transform: rotate(-50deg) skewY(15deg) skewX(5deg);
+    margin: 0 2em;
+    position: relative;
+    top: -1.55em;
+
+    @media screen and (max-width: 480px) {
+      display: none !important;
+    }
+
+    @media screen and (min-width: 641px) {
+      margin: 0 2em;
+    }
+
+    @media screen and (min-width: 961px) {
+      margin: 0 5em;
+    }
+
+  }
+
+  span {
+    font-size: 0.5em;
+    position: relative;
+    top: -0.4em;
+    font-family: "bebasNeueRegular", sans-serif;
+
+    @media screen and (min-width: 641px) {
+      font-size: 0.7em;
+      top: -0.2em
+    }
+
+    @media screen and (min-width: 961px) {
+      font-size: 1em;
+      top: 0
+    }
+
+  }
+
+  .left-align {
+    text-align: center;
+
+    &:before {
+      margin-left: 2em
+    }
+  }
+
+}
+
+//@media screen and (min-width: 961px) {
+//  .page-title.left-align {
+//    text-align: left
+//  }
+//}
+
+//@media screen and (min-width: 961px) {
+//  .page-title.left-align:before {
+//    margin-left: 0
+//  }
+//}
+
+#single-content {
+  display: block;
+  width: 100%;
+  float: left;
+
+  .single-post-title {
+    font-size: 1.8em;
+    margin: 1.1em 0 1.3em;
+    text-align: left;
+  }
+
+  .single-page-title {
+    font-size: 2.4em;
+    margin: 1.8em 0 0.5em !important;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  &.half-page {
+    display: inline-block;
+    width: 100%
+  }
+
+  .half-page {
+    display: inline-block;
+    width: 100%
+  }
+
+  &.two-thirds-page {
+    display: inline-block;
+    width: 100%
+  }
+
+  &.scrollable {
+    text-align: left
+  }
+
+}
+
+@media screen and (min-width: 961px) {
+  #single-content.half-page {
+    width: 50%;
+  }
+
+  #single-content .half-page {
+    width: 50%;
+    padding: 4px 10px;
+
+  }
+
+  #single-content .full-page {
+    width: 100%;
+    padding: 4px 10px;
+
+  }
+}
+
+@media screen and (min-width: 961px) {
+  #single-content.two-thirds-page {
+    width: 60%
+  }
+}
+
+@media screen and (min-width: 961px) {
+  #single-content.scrollable {
+    padding-left: 4em;
+    padding-right: 1em
+  }
+}
+
+//#single-content.scrollable h1,
+//#single-content.scrollable h2,
+//#single-content.scrollable h3,
+//#single-content.scrollable h4,
+//#single-content.scrollable h5,
+//#single-content.scrollable h6 {
+//  text-align: left !important;
+//  line-height: 1.2
+//}
+//
+//#single-content.scrollable h1:first-child,
+//#single-content.scrollable h2:first-child,
+//#single-content.scrollable h3:first-child,
+//#single-content.scrollable h4:first-child,
+//#single-content.scrollable h5:first-child,
+//#single-content.scrollable h6:first-child {
+//  margin-top: 0
+//}
+
+@media screen and (min-width: 961px) {
+  #single-content.narrow-content {
+    padding: 0 11em
+  }
+}
+
+#single-content.narrow-content .featured-image {
+  height: 27.5em;
+  margin-top: 5.5em
+}
+
+#single-content.narrow-content .entry-content {
+  border-bottom: 1px solid #645349;
+  padding-bottom: 1.2em
+}
+
+h2.smaller.page-title {
+  font-size: 58px;
+}
+
+.page-bg-image{
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: calc(100vh - 100px) !important;
+  position: relative !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.smaller {
+    height: calc(50vh - 100px) !important;
+  }
+
+  .page-title{
+    color: $blue;
+    //color: rgba(255,255,255,0.7);
+
+    border-top: 1px solid rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+  }
+
+  .page-title :after, .page-title :before {
+    background-color: rgba(255,255,255,0.7);
+  }
+}
+
+.overlay{
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+

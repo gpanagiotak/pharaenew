@@ -58,8 +58,10 @@ module.exports = {
             },
             {
                 test: /\.(gif|ico|png|jpe?g|svg)$/i,
+                // include: path.join(__dirname, 'assets/css/images'),
+                // loader: "file-loader",
                 use: [
-                    'file-loader?name=/images/[name].[ext]',
+                    'file-loader?name=images/[name].[ext]',
                     {
                         loader: 'image-webpack-loader',
                         options: {
@@ -82,7 +84,7 @@ module.exports = {
                             // the webp option will enable WEBP
                             webp: {
                                 quality: 85
-                            }
+                            },
                         }
                     },
                 ],

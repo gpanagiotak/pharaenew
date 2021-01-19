@@ -1,3 +1,278 @@
 /*---------------------
   Header
 -----------------------*/
+
+#document-header:before,
+#document-header:after {
+  content: " ";
+  display: table
+}
+
+#document-header:after {
+  clear: both
+}
+
+
+#document-header {
+  background-color: #645349;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  *zoom: 1;
+  display: block;
+
+  .header-inner {
+    position: relative;
+    text-align: center;
+  }
+
+  .header-hero {
+    position: relative;
+    z-index: 5;
+    background-color: #645349;
+    overflow: hidden;
+
+    @media screen and (max-width: 480px) {
+        padding: 0 5px;
+    }
+
+  }
+
+  .logo {
+    position: relative;
+    height: 6.4em;
+    overflow: hidden;
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 480px) {
+        height: 5em;
+        margin: 1em 0;
+        z-index: 0;
+    }
+
+  }
+
+  .languages-availability {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-weight: 600;
+    width: 100%;
+    text-align: right;
+    font-style: italic;
+    z-index: 0;
+
+    @media screen and (max-width: 480px) {
+        top: 5px;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%);
+        z-index: 10
+    }
+  }
+
+  #close-booking-form {
+    position: absolute;
+    color: #26d2e2;
+    float: right;
+    display: inline-block;
+    opacity: 0;
+    right: 0;
+    z-index: 0;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s
+  }
+}
+
+
+
+
+
+
+//#document-header .logo.icon-logo:before {
+//  font-size: 15em;
+//  color: #fff;
+//  overflow: hidden;
+//  position: relative;
+//  top: -0.28em
+//}
+
+
+/*.icon-logo:before {*/
+/*content: "a"*/
+/*}
+
+ */
+
+//@media screen and (max-width: 480px) {
+//  #document-header .logo.icon-logo:before {
+//    font-size: 12em
+//  }
+//}
+
+
+
+
+@media screen and (max-width: 480px) {
+  #document-header .languages-availability.opened-form {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+    background-color: #645349
+  }
+}
+
+#document-header .languages-availability.opened-form .check-availability,
+#document-header .languages-availability.opened-form .language-list {
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s
+}
+
+#document-header .languages-availability.opened-form #close-booking-form {
+  opacity: 1;
+  z-index: 5;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s
+}
+
+#document-header .check-availability {
+  border: 1px solid #26d2e2 !important;
+  margin-left: 1em;
+  color: #26d2e2 !important;
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 600;
+  padding: 0.45em 1.5em;
+  float: right;
+  background-color: #645349;
+  font-size: 1em;
+  position: relative;
+  height: 2.6em;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  z-index: 5
+}
+
+@media screen and (max-width: 480px) {
+  #document-header .check-availability {
+    -webkit-transition-delay: 0s !important;
+    -moz-transition-delay: 0s !important;
+    transition-delay: 0s !important;
+    -webkit-transition-duration: 0s !important;
+    -moz-transition-duration: 0s !important;
+    transition-duration: 0s !important
+  }
+}
+
+#document-header .check-availability:hover,
+#document-header .check-availability:active {
+  background-color: #473b33
+}
+
+#document-header .check-availability .check-text {
+  display: none
+}
+
+@media screen and (min-width: 961px) {
+  #document-header .check-availability .check-text {
+    display: inline
+  }
+}
+
+#document-header .check-availability .book-text {
+  display: inline
+}
+
+@media screen and (min-width: 961px) {
+  #document-header .check-availability .book-text {
+    display: none
+  }
+}
+
+
+#toggle-menu, #mobile-toggle-menu {
+  display: block;
+  color: #fff;
+  font-size: 1.2em;
+  position: absolute;
+  cursor: pointer;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 0;
+  line-height: 3;
+  font-weight: 600;
+  font-style: italic;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  font-family: "bebasNeueRegular", sans-serif;
+}
+
+#toggle-menu:before, #mobile-toggle-menu:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  top: -2em;
+  left: 20%;
+  background-color: #26d2e2;
+  -webkit-transform: rotate(40deg) translateX(-50%) skewY(15deg) skewX(5deg);
+  -moz-transform: rotate(40deg) translateX(-50%) skewY(15deg) skewX(5deg);
+  -ms-transform: rotate(40deg) translateX(-50%) skewY(15deg) skewX(5deg);
+  -o-transform: rotate(40deg) translateX(-50%) skewY(15deg) skewX(5deg);
+  transform: rotate(40deg) translateX(-50%) skewY(15deg) skewX(5deg);
+  z-index: -1
+}
+
+#toggle-menu:after, #mobile-toggle-menu:after {
+  content: "X";
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  font-style: normal;
+  line-height: 2.2;
+  font-weight: 300;
+  opacity: 0;
+  color: #fff;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s
+}

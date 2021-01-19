@@ -1,0 +1,91 @@
+
+.facilities-list {
+  margin: 1.2em 0;
+  padding: 0
+}
+
+.facilities-list .post-item-title a {
+  color: #645349;
+  font-family: "bebasNeueRegular", sans-serif;
+  font-style: italic;
+}
+
+.facilities-list .post-list-item {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 8em
+}
+
+.facilities-list .post-list-item:last-child {
+  margin-right: 0
+}
+
+.facilities-list .post-list-item:first-child {
+  margin-top: 0
+}
+
+@media screen and (min-width: 961px) {
+  .facilities-list .post-list-item {
+    margin-top: 0;
+    display: block;
+    float: left;
+    margin-right: 1.33375%;
+    width: 32.44416%
+  }
+  .facilities-list .post-list-item:last-child {
+    margin-right: 0
+  }
+}
+
+.facilities-list .post-item-title {
+  font-size: 2.6em;
+  border-bottom: 1px solid #645349;
+  margin-top: 0;
+  white-space: nowrap
+}
+
+.facilities-list .post-item-excerpt,
+.facilities-list .post-item-content {
+  margin: 1.5em 0;
+  padding: 0 2em;
+  text-align: center;
+  font-size: 15px;
+}
+
+.facilities-list a.read-more.button,
+.facilities-list #local-weather a.read-more.weather-link,
+#local-weather .facilities-list a.read-more.weather-link,
+.facilities-list .offers-list a.read-more.booking-link,
+.offers-list .facilities-list a.read-more.booking-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  background: none !important;
+  color: #26d2e2 !important;
+  position: relative;
+  font-style: normal;
+  font-size: 1em;
+  border: 0 !important
+}
+
+.facilities-list a.read-more.button:before,
+.facilities-list #local-weather a.read-more.weather-link:before,
+#local-weather .facilities-list a.read-more.weather-link:before,
+.facilities-list .offers-list a.read-more.booking-link:before,
+.offers-list .facilities-list a.read-more.booking-link:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  border-width: 8px 12px;
+  border-color: transparent transparent transparent #26d2e2;
+  border-style: solid;
+  top: 2px
+}
+
+.facilities-list .post-item-image {
+  height: 13.2em
+}

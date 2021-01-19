@@ -115,12 +115,12 @@ class Short_Code_Handler
                 $img_id = get_post_thumbnail_id(get_the_ID());
                 $img_alt_text = get_post_meta($img_id, '_wp_attachment_image_alt', true);
                 $html = $html . '<a href="'.$thumb[0].'" data-sub-html="'.$the_query->post->post_title.'"  >';
-                $html = $html . '<div class="gallery_box">';
-                $html = $html . '<div class="gallery_img_holder">';
-                $html = $html . '<img src="'.$medium[0].'" alt="'.$img_alt_text.'" />';
-                $html = $html . '<span class="hoverlay"><i class="fa fa-link"></i> </span>';
-                $html = $html . '</div>';
-                $html = $html . '<span class="caption">'.get_the_title().'</span>';
+                $html = $html . '<div class="gallery_box" style="background: url('.$medium[0].')">';
+                //$html = $html . '<div class="gallery_img_holder">';
+                //$html = $html . '<img src="'.$medium[0].'" alt="'.$img_alt_text.'" />';
+                //$html = $html . '<span class="hoverlay"><i class="fa fa-link"></i> </span>';
+                //$html = $html . '</div>';
+                //$html = $html . '<span class="caption">'.get_the_title().'</span>';
                 $html = $html . '</div>';
                 $html = $html . '</a>';
 

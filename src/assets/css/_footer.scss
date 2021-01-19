@@ -1,4 +1,361 @@
 @import "base";
+
 /*---------------------
   Footer
 -----------------------*/
+
+#document-footer {
+  *zoom: 1;
+  display: block;
+  padding: 0 2em;
+  background-color: #645349;
+  color: #fff;
+
+  @media screen and (max-width: 961px) {
+    display: block;
+    padding: 0 1em;
+  }
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .footer-inner {
+    *zoom: 1;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+.find-us-on-map {
+  display: inline-block;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 0.7em;
+  text-shadow: none;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+
+  span {
+    font-size: 2em;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.copyright_wrapper {
+  padding: 0.8em 2em;
+  background: #fff;
+
+  .espa_inner{
+    *zoom: 1;
+    max-width: 1100px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+}
+
+.copyright-holder {
+  padding: 1.4em 0;
+  background: $brown;
+  font-size: 0.9em;
+  color: #d0c5b8;
+  display: flex;
+
+  @media screen and (max-width: 1200px) {
+    padding: 1em 2em;
+  }
+
+  .copyright-holder {
+    *zoom: 1;
+    display: block
+  }
+
+  .copyright-holder:before,
+  .copyright-holder:after {
+    content: " ";
+    display: table
+  }
+
+  .copyright-holder:after {
+    clear: both
+  }
+
+  .copyright-inner {
+    *zoom: 1;
+    max-width: 1100px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 468px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .copyright-block {
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: left;
+    flex-basis: 50%;
+
+    .copyright {
+      display: inline;
+      margin-left: 0%;
+    }
+  }
+
+  .credits {
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: right;
+    display: inline-block;
+    flex-basis: 50%;
+
+    @media screen and (max-width: 468px) {
+      text-align: left;
+    }
+  }
+}
+
+//@media screen and (min-width: 961px) {
+//  .copyright-holder .copyright {
+//    /*margin-left: 25.58941%*/
+//  }
+//}
+
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  margin-left: 1em !important;
+
+  li {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    line-height: 3.6em;
+    margin: 0 0.2em !important;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-size: 2.5em;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      color: #26d2e2;
+      -webkit-transition-duration: 0.6s;
+      -moz-transition-duration: 0.6s;
+      transition-duration: 0.6s
+    }
+
+    &:hover a {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    }
+  }
+}
+
+.newsletter-subscribe {
+  position: relative;
+
+  .subscribe-form {
+    font-weight: normal;
+    margin: 0;
+    display: inline-block
+  }
+
+  #email {
+    display: block;
+    float: left;
+    width: auto;
+    border: 0;
+    background-color: #a8927a;
+    padding-left: 0.5em;
+    height: 2.4em;
+
+    &::-webkit-input-placeholder {
+      color: #d0c5b8;
+      opacity: 1
+    }
+
+    &:-moz-placeholder {
+      color: #d0c5b8;
+      opacity: 1
+    }
+
+    &::-moz-placeholder {
+      color: #d0c5b8;
+      opacity: 1
+    }
+
+    &:-ms-input-placeholder {
+      color: #d0c5b8;
+      opacity: 1
+    }
+  }
+
+  .mailjet-subscribe {
+    display: block;
+    float: left;
+    padding: 0.4em 1.2em;
+    height: 2.4em;
+    border-radius: 0;
+    margin-left: 2px;
+    font-size: 1em;
+
+    &:hover, &:active {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    }
+  }
+
+  .response {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 20em;
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+
+    @media screen and (min-width: 961px) {
+      margin-left: -7%
+    }
+
+    .error, .success {
+      display: inline-block;
+      padding: 1em;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3)
+    }
+
+    .error {
+      background-color: #e01d18
+    }
+
+    .success {
+      background-color: #8ab21d
+    }
+  }
+}
+
+.extra-footer-links {
+  display: block;
+  width: 100%;
+  clear: both;
+  border-top: 1px solid #826e63;
+  border-bottom: 1px solid #826e63;
+}
+
+.widget.gnto-holder {
+  height: auto;
+  margin-top: 10px;
+
+  @media screen and (min-width: 961px) {
+    height: 2em;
+  }
+}
+
+
+.main-contact-office {
+  display: inline-block;
+  width: 100%;
+
+  .office-details {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media screen and (min-width: 1025px) {
+        margin: 1em 0 0;
+    }
+
+    li {
+      display: inline-block;
+      width: 100%;
+
+      &.office-phone:before {
+        content: "Tel.:";
+        display: inline-block;
+        margin-right: 0.5em
+      }
+
+      &.office-fax:before {
+        content: "Fax:";
+        display: inline-block;
+        margin-right: 0.5em
+      }
+
+      &.office-email:before {
+        content: "Email:";
+        display: inline-block;
+        margin-right: 0.5em
+      }
+    }
+  }
+}
+

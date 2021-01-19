@@ -9,18 +9,18 @@
 
 // Top Menu
 
-function genius_theme_primary_menu()
-{
-	$args = array(
-		'theme_location' => 'primary-menu',
-		'menu' => 'primary-menu',
-		'container' => 'nav',
-		'container_class' => 'primary-menu-container',
-		'menu_class' => 'menu',
-	);
-
-	wp_nav_menu( $args );
-}
+//function genius_theme_primary_menu()
+//{
+//	$args = array(
+//		'theme_location' => 'primary-menu',
+//		'menu' => 'primary-menu',
+//		'container' => 'nav',
+//		'container_class' => 'primary-menu-container',
+//		'menu_class' => 'menu',
+//	);
+//
+//	wp_nav_menu( $args );
+//}
 
 // Language list
 

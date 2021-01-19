@@ -4,6 +4,13 @@
     box-sizing: border-box
 }
 
+/*.home #stay .page-title,*/
+/*.home #dine .page-title {*/
+    /*width: 100%*/
+/*}*/
+
+
+
 .__bold.__italic a{
 	font-weight: bold;	
 	padding: 4px 6px;
@@ -2939,9 +2946,6 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     display: none !important
 }
 
-.page-title {
-    margin: 0.5em 0
-}
 
 .entry-images .entry-image,
 .featured-image {
@@ -5692,94 +5696,6 @@ main input[type="submit"]:active {
     z-index: 5
 }
 
-.page-title {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    border-top: 1px solid #645349;
-    border-bottom: 1px solid #645349;
-    font-size: 4.75em;
-    position: relative;
-    font-weight: 100;
-    line-height: 1.65;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    position: relative;
-    white-space: nowrap
-}
-
-.page-title.left-align {
-    text-align: center
-}
-
-@media screen and (min-width: 961px) {
-    .page-title.left-align {
-        text-align: left
-    }
-}
-
-.page-title.left-align:before {
-    margin-left: 2em
-}
-
-@media screen and (min-width: 961px) {
-    .page-title.left-align:before {
-        margin-left: 0
-    }
-}
-
-.page-title:before,
-.page-title:after {
-    content: "";
-    font-size: 0.15em;
-    width: 1.1em;
-    height: 1.1em;
-    display: inline-block;
-    background-color: #645349;
-    -webkit-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
-    -moz-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
-    -ms-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
-    -o-transform: rotate(-50deg) skewY(15deg) skewX(5deg);
-    transform: rotate(-50deg) skewY(15deg) skewX(5deg);
-    margin: 0 2em;
-    position: relative;
-    top: -1.55em
-}
-
-@media screen and (max-width: 480px) {
-    .page-title:before,
-    .page-title:after {
-        display: none !important
-    }
-}
-
-@media screen and (min-width: 641px) {
-    .page-title:before,
-    .page-title:after {
-        margin: 0 2em
-    }
-}
-
-@media screen and (min-width: 961px) {
-    .page-title:before,
-    .page-title:after {
-        margin: 0 5em
-    }
-}
-
-.page-title:before {
-    box-shadow: -10px -10px 0px -2px #26d2e2
-}
-
-.page-title:after {
-    box-shadow: 10px 10px 0px -2px #26d2e2
-}
-
-.page-title span {
-    font-size: 0.5em;
-    position: relative;
-    top: -0.4em
-}
 
 
 h1.review_title{
@@ -5948,9 +5864,6 @@ ul.home_reviews li a:hover{
 
 
 
-h2.smaller.page-title {
-    font-size: 58px;
-}
 
 
 
@@ -5965,19 +5878,6 @@ h2.smaller.page-title {
 
 
 
-@media screen and (min-width: 641px) {
-    .page-title span {
-        font-size: 0.7em;
-        top: -0.2em
-    }
-}
-
-@media screen and (min-width: 961px) {
-    .page-title span {
-        font-size: 1em;
-        top: 0
-    }
-}
 
 #page-content {
     margin: 3em 0
@@ -6055,10 +5955,6 @@ h2.smaller.page-title {
     }
 }
 
-.home #stay .page-title,
-.home #dine .page-title {
-    width: 100%
-}
 
 .home #must-see {
     margin-top: 1em;
