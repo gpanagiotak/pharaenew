@@ -6,9 +6,9 @@
   background: $light;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.8s cubic-bezier(0.6, 0.27, 0.57, 0.98);
-  -moz-transition: max-height 0.8s cubic-bezier(0.6, 0.27, 0.57, 0.98);
-  transition: max-height 0.8s cubic-bezier(0.6, 0.27, 0.57, 0.98);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.6, 0.27, 0.57, 0.98);
+  -moz-transition: max-height 0.3s cubic-bezier(0.6, 0.27, 0.57, 0.98);
+  transition: max-height 0.3s cubic-bezier(0.6, 0.27, 0.57, 0.98);
   position: relative;
   z-index: 5;
 
@@ -25,9 +25,9 @@
 
   &.active {
     max-height: 500px;
-    -webkit-transition: max-height 1s;
-    -moz-transition: max-height 1s;
-    transition: max-height 1s;
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    transition: max-height 0.4s;
   }
 
 }

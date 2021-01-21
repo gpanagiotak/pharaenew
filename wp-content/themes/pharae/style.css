@@ -524,9 +524,9 @@ table {
 
 .header-booking-form.active {
     max-height: 500px;
-    -webkit-transition: max-height 1s;
-    -moz-transition: max-height 1s;
-    transition: max-height 1s
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    transition: max-height 0.4s
 }
 
 #booking-form {

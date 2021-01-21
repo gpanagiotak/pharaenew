@@ -1,5 +1,16 @@
 $(document).ready(function () {
 
+    $(".reviews-slider").slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+    });
+
     $(".sliding_gallery .lightgallery").slick({
         dots: true,
         arrows: true,
@@ -22,7 +33,7 @@ $(document).ready(function () {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
@@ -67,40 +78,40 @@ $(document).ready(function () {
         $('.header-navigation').toggleClass("active");
     });
 
-    let check_in_ready = 0;
-    let check_out_ready = 0;
-
-    $('.checkout').on('change', function () {
-        check_out_ready = 1;
-
-        console.log('check_out_ready: ', check_out_ready);
-        console.log('check_in_ready: ', check_in_ready);
-
-        if (check_in_ready === 1 && check_out_ready === 1) {
-            $('.checksubmit').prop("disabled", false);
-        }
-        else {
-            $('.checksubmit').prop("disabled", true);
-        }
-    });
-
-    $('.checkin').on('change', function () {
-        check_in_ready = 1;
-
-        if (check_in_ready === 1 && check_out_ready === 1) {
-            $('.checksubmit').prop("disabled", false);
-        }
-        else {
-            $('.checksubmit').prop("disabled", true);
-        }
-    });
-
-
-    $('.checksubmit').on("click", function () {
-        if (check_in_ready !== 1 || check_out_ready !== 1) {
-            alert('not ready to click');
-        }
-    });
+    // let check_in_ready = 0;
+    // let check_out_ready = 0;
+    //
+    // $('.checkout').on('change', function () {
+    //     check_out_ready = 1;
+    //
+    //     console.log('check_out_ready: ', check_out_ready);
+    //     console.log('check_in_ready: ', check_in_ready);
+    //
+    //     if (check_in_ready === 1 && check_out_ready === 1) {
+    //         $('.checksubmit').prop("disabled", false);
+    //     }
+    //     else {
+    //         $('.checksubmit').prop("disabled", true);
+    //     }
+    // });
+    //
+    // $('.checkin').on('change', function () {
+    //     check_in_ready = 1;
+    //
+    //     if (check_in_ready === 1 && check_out_ready === 1) {
+    //         $('.checksubmit').prop("disabled", false);
+    //     }
+    //     else {
+    //         $('.checksubmit').prop("disabled", true);
+    //     }
+    // });
+    //
+    //
+    // $('.checksubmit').on("click", function () {
+    //     if (check_in_ready !== 1 || check_out_ready !== 1) {
+    //         alert('not ready to click');
+    //     }
+    // });
 
     $(document).bookingFormToggle();
 
@@ -124,8 +135,6 @@ $.fn.bookingFormToggle = function () {
 
 $.fn.toggleMainMenu = function () {
     let $menu, resizeMenu;
-
-    console.log("hello &&&&&&&&&&&&&&&&&&&&&&&&&");
 
     resizeMenu = function () {
         var $header, $viewport;
@@ -191,3 +200,8 @@ function getCookie(name) {
     }
     return null;
 }
+
+$( function() {
+    $( "#arrival-date" ).datepicker({ dateFormat: 'dd-mm-yy' });
+} );
+

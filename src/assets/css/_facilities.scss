@@ -17,7 +17,11 @@
   width: 100%;
   text-align: center;
   position: relative;
-  margin-top: 8em
+  margin-top: 8em;
+
+  @media screen and (max-width: 961px) {
+    margin-top: 5em;
+  }
 }
 
 .facilities-list .post-list-item:last-child {
@@ -87,5 +91,13 @@
 }
 
 .facilities-list .post-item-image {
-  height: 13.2em
+  height: 13.2em;
+
+  @media screen and (max-width: 992px) {
+    height: 32em;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 23.2em;
+  }
 }

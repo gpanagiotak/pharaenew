@@ -62,7 +62,6 @@ class SLICKJS_Slider
 
     }
 
-
     private static function loadslides($the_category)
     {
         $args = array(

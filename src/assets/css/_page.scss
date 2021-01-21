@@ -40,8 +40,9 @@
     position: relative;
     top: -1.55em;
 
-    @media screen and (max-width: 480px) {
-      display: none !important;
+    @media screen and (max-width: 768px) {
+      width: 2em;
+      height: 2em;
     }
 
     @media screen and (min-width: 641px) {
@@ -216,6 +217,11 @@ h2.smaller.page-title {
 
   &.smaller {
     height: calc(50vh - 100px) !important;
+
+    @media screen and (max-width: 992px) {
+      height: calc(70vh) !important;
+      margin-bottom: 40px;
+    }
   }
 
   .page-title{
