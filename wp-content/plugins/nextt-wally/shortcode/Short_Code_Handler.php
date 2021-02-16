@@ -80,16 +80,6 @@ class Short_Code_Handler
 
         }
 
-
-//        <div id="lightgallery">
-//  <a href="img/img1.jpg">
-//      <img src="img/thumb1.jpg" />
-//  </a>
-//  <a href="img/img2.jpg">
-//      <img src="img/thumb2.jpg" />
-//  </a>
-//  ...
-//</div>
         // Loop and get the posts from custom post type
         if ($the_query->have_posts()){
 
@@ -108,7 +98,7 @@ class Short_Code_Handler
 
                         // Get thumnail url
                 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($the_query->post->ID), 'gallery_main' );
-                $medium = wp_get_attachment_image_src( get_post_thumbnail_id($the_query->post->ID), 'medium' );
+                $medium = wp_get_attachment_image_src( get_post_thumbnail_id($the_query->post->ID), 'gallery_main' );
 
                 $url = $thumb['0'];
 
@@ -121,6 +111,7 @@ class Short_Code_Handler
                 //$html = $html . '<span class="hoverlay"><i class="fa fa-link"></i> </span>';
                 //$html = $html . '</div>';
                 //$html = $html . '<span class="caption">'.get_the_title().'</span>';
+                $html = $html . '<span class="sec_heading">'.$sec_heading.'</span>';
                 $html = $html . '</div>';
                 $html = $html . '</a>';
 
