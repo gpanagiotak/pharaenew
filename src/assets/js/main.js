@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    const covid_informed = getCookie('covid_informed');
+
+    if (covid_informed !== '1') {
+        $('.covid_shield_fixed').show();
+    } else  {
+        $('.covid_shield_fixed').hide();
+    }
+
     $(".reviews-slider").slick({
         dots: true,
         arrows: false,
@@ -10,6 +18,13 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: true,
     });
+
+    $(".close_covid").on("click", function () {
+        setCookie('covid_informed', '1', 1);
+        $('.covid_shield_fixed').hide();
+    });
+
+
 
     $(".sliding_gallery .lightgallery").slick({
         dots: true,

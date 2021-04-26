@@ -127,7 +127,13 @@ class GoogleMapsAPILoader
 		);
 		
 		// API Key
+		
+		// NB: Legacy key
 		$key = get_option('wpgmza_google_maps_api_key');
+		
+		// NB: Standard key
+		if(empty($key))
+			$key = $wpgmza->settings->wpgmza_google_maps_api_key;
 		
 		if(!empty($key))
 			$params['key'] = $key;
@@ -271,13 +277,21 @@ class GoogleMapsAPILoader
 		if(isset($wpgmza->settings->wpgmza_maps_engine) && $wpgmza->settings->wpgmza_maps_engine == 'open-street-map')
 			$wpgmza->settings->wpgmza_maps_engine = 'open-layers';
 		
-		if(!empty($settings['wpgmza_settings_remove_api']))
+
+		/** 
+		 * Removed in 8.1.2
+		 * 
+		 * This is now controlled purely by the conditional dropdown
+		 *
+		 * Will cause issues if the user is coming from V6 maps,forcing the system to always skip API loading, no option to untoggle settings as it was deprecated
+		*/
+		/*if(!empty($settings['wpgmza_settings_remove_api']))
 		{
 			$status->message = 'Remove API checked in settings';
 			$status->code = GoogleMapsAPILoader::REMOVE_API_CHECKED;
 			
 			return false;
-		}
+		}*/
 		
 		if(!is_admin() && 
 			!empty($settings['wpgmza_gdpr_require_consent_before_load']) && 

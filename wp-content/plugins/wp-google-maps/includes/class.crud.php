@@ -157,6 +157,7 @@ class Crud extends Factory implements \IteratorAggregate, \JsonSerializable
 		$stmt = $wpdb->prepare("DELETE FROM `{$table_name}` WHERE id IN ($placeholders)", $ids);
 		$wpdb->query($stmt);
 	}
+
 	
 	/**
 	 * Gets the table name for this object type
@@ -388,7 +389,7 @@ class Crud extends Factory implements \IteratorAggregate, \JsonSerializable
 	
 	protected function getReadColumns()
 	{
-		return "*";
+		return array("*");
 	}
 	
 	/**
@@ -402,7 +403,10 @@ class Crud extends Factory implements \IteratorAggregate, \JsonSerializable
 		
 		$this->assert_not_trashed();
 		
-		$stmt = $wpdb->prepare("SELECT * FROM " . $this->get_table_name() . " WHERE id = %d", array($this->id));
+		$columns = implode(', ', $this->getReadColumns());
+		
+		$stmt = $wpdb->prepare("SELECT $columns FROM " . $this->get_table_name() . " WHERE id = %d", array($this->id));
+		
 		$results = $wpdb->get_results($stmt);
 		
 		if(empty($results))
