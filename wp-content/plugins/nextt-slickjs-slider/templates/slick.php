@@ -19,7 +19,7 @@
             <?php $url = $thumb['0']; ?>
             <div style="background-image:url('<?= $url ?>') ">
                 <div class="overlay"></div>
-                <img src="<?php echo $url ?>" class="" style="visibility: hidden;" />
+                <img src="<?php echo $url ?>" class="" style="visibility: hidden;" alt="slide image" />
                 <?php if ((get_post_meta(get_the_ID(),'slick_meta_title',true)) != '') { ?>
                     <div class="image-text">
                             <a href="<?= get_post_meta(get_the_ID(),'slick_meta_link',true); ?>">
