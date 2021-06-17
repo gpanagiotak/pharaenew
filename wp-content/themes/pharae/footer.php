@@ -66,7 +66,7 @@
         <div class="the_espa_section">
             <div class="espa_inner">
                 <a href="https://www.pharae.gr/espa/" target="_blank">
-                    <img src="<?= get_stylesheet_directory_uri().'/images/espa_new.jpg' ?>" width="150" />
+                    <img src="<?= get_stylesheet_directory_uri().'/images/espa_new.jpg' ?>" alt="espa" width="150" />
                 </a>
             </div>
         </div>

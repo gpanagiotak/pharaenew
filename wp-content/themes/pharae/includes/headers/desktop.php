@@ -22,7 +22,7 @@
                     $address  	= isset( $settings['office_address'] ) ? $settings['office_address'] : '';
                     echo '<p>'.$address.'</p>';
                     ?>
-                    <a class="mobile" href="tel:+302721094420"></a>
+                    <a class="mobile" href="tel:+302721094420">&nbsp;</a>
                 </div>
 
 

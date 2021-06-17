@@ -31,7 +31,7 @@
         </div>
 
         <div class="adv_phone_no">
-            <a class="mobile" href="tel:+302721094420"></a>
+            <a class="mobile" href="tel:+302721094420">&nbsp;</a>
         </div>
 
     </div>
